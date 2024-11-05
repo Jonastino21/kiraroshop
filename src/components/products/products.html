@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="./../../output.css">
+</head>
+<body>
+
+<div class="bg-white">
+  <header class="bg-[#FCF8F1] bg-opacity-30">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+            <div class="flex-shrink-0">
+                <a href="#" title="" class="flex">
+                     <strong>logo</strong>
+                </a>
+            </div>
+
+            <button type="button" class="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100">
+
+                <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+                </svg>
+
+                <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+
+            <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
+                <a href="./../../index.html" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80"> Home </a>
+
+                <a href="./products.html" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80"> Products </a>
+
+                <a href="#" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80"> Contact </a>
+            </div>
+
+            <a href="./../login/login.html" title="" class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full" role="button"> Log in </a>
+        </div>
+    </div>
+</header>
+    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <h2 class="sr-only">Products</h2>
+  
+      <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <a href="#" class="group" data-product-id="1" onclick="openModal(this)">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/shoe.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+        </a>
+        <a href="#" class="group" data-product-id="2" onclick="openModal(this)">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/shoe.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+        </a>
+        <a href="#" class="group" data-product-id="3" onclick="openModal(this)">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/shoe.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
+        </a>
+        <a href="#" class="group" data-product-id="4" onclick="openModal(this)">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/shoe.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+        </a>
+        <a href="#" class="group" data-product-id="4" onclick="openModal(this)">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/shoe.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+        </a>        
+        <a href="#" class="group" data-product-id="4" onclick="openModal(this)">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/shoe.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+        </a>
+        <a href="#" class="group" data-product-id="4" onclick="openModal(this)">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/shoe.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+        </a>
+        <a href="#" class="group" data-product-id="4" onclick="openModal(this)">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/shoe.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+
+  <div id="productModal" class="fixed inset-0 z-10 hidden bg-gray-500 bg-opacity-75 transition-opacity">
+    <div class="fixed inset-0 z-20 flex items-center justify-center p-4">
+        <div class="relative bg-white rounded-lg shadow-lg max-w-md w-full">
+            <button type="button" class="absolute top-3 right-3 text-gray-400 hover:text-gray-500" onclick="closeModal()">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="p-10">
+                <div class="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
+                    <img id="modalImage" src="" alt="Product Image" class="object-cover object-center">
+                </div>
+                <h2 id="modalTitle" class="text-2xl font-bold text-gray-900 mt-4">Product Title</h2>
+                <p id="modalPrice" class="text-xl text-gray-900 mt-2">$XX</p>
+                <p id="modalDescription" class="text-sm text-gray-700 mt-4">Product description goes here...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal(element) {
+        const modal = document.getElementById('productModal');
+        modal.classList.remove('hidden');
+
+        const productId = element.getAttribute('data-product-id');
+        const productData = getProductData(productId);
+
+        document.getElementById('modalImage').src = productData.image;
+        document.getElementById('modalTitle').textContent = productData.title;
+        document.getElementById('modalPrice').textContent = productData.price;
+        document.getElementById('modalDescription').textContent = productData.description;
+    }
+
+    function closeModal() {
+        document.getElementById('productModal').classList.add('hidden');
+    }
+
+    function getProductData(productId) {
+        const products = {
+            1: { image: '/shoe.jpg', title: 'Earthen Bottle', price: '$48', description: 'A beautiful earthen bottle.' },
+            2: { image: '/shoe.jpg', title: 'Earthen Bottle', price: '$48', description: 'A beautiful earthen bottle.' },
+            3: { image: '/shoe.jpg', title: 'Earthen Bottle', price: '$48', description: 'A beautiful earthen bottle.' },
+            4: { image: '/shoe.jpg', title: 'Earthen Bottle', price: '$48', description: 'A beautiful earthen bottle.' },
+            
+        };
+        return products[productId];
+    }
+</script>
+  
+</body>
+</html>
