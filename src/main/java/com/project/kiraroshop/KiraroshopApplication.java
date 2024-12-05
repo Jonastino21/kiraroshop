@@ -1,0 +1,13 @@
+package com.project.kiraroshop;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class KiraroshopApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(KiraroshopApplication.class, args);
+	}
+
+}
