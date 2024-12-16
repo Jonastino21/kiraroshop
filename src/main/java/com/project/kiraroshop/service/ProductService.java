@@ -23,7 +23,14 @@ public class ProductService {
     }
 
     public Products addProduct(Products product) {
-
+        Products prod = new Products();
+        prod.setName(product.getName());
+        prod.setPrice(product.getPrice());
+        prod.setDescription(product.getDescription());
+        prod.setCategory(product.getCategory());
+        prod.setStock(product.getStock());
+        prod.setId(this.productRepository.save(prod).getId());
+        prod.setImage(product.getImage());
         return productRepository.save(product);
     }
 

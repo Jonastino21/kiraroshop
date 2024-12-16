@@ -10,6 +10,7 @@ import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 
 @RestController
 @RequestMapping("/api/products")
+@CrossOrigin(origins = "http://localhost:5173/")
 public class ProductController {
     private final ProductService productService;
 
